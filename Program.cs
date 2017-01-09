@@ -17,160 +17,150 @@ namespace Projext_Assigned_Number1
             Console.WriteLine("Please tell us, what is your last name? ");
             string lastName = Console.ReadLine();
 
-            Console.WriteLine("Please tell us, what is your age? ");    
+            Console.WriteLine("Please tell us, what is your age? ");
             int ageOfUser = int.Parse(Console.ReadLine()); //Console.ReadLine-- this is storing the users input
 
             Console.WriteLine("In which month were you born? Please enter as a two digit number.");
             int monthOfUser = int.Parse(Console.ReadLine());
 
 
-             Console.WriteLine("What is your favorite ROYGBIV color? If you do not know what ROYGBIV is type help");
+            Console.WriteLine("What is your favorite ROYGBIV color? If you do not know what ROYGBIV is type help");
             string favColor = Console.ReadLine();
 
             if (favColor == "help") //does this section need any adjusting?
             {
-               
+
                 Console.WriteLine("The ROYGBIV colors are red, orange, yellow, green, blue, indigo, violet" + "\n");
-               
+
                 {
                     Console.WriteLine("What's your favorite ROYGBIV color?");
                     favColor = Console.ReadLine();
                 }
 
 
-                
+
             }
-            
-                Console.WriteLine("\n" + "How many siblings do you have? ");
+
+            Console.WriteLine("\n" + "How many siblings do you have? ");
             int sibs = int.Parse(Console.ReadLine());
 
-           
+
 
             Console.WriteLine(firstName + " " + lastName);
 
             //part 2
+            //what you need will find you and you will find what you need
+            if (ageOfUser % 2 == 0)
 
-            if (ageOfUser % 2 == 0)                     //if someones age is odd then it will print the statement below 
-            { Console.WriteLine("You will retire in 5 years.");
-                                                   //make this equal to number or years until retirement
-
+            {
+                Console.WriteLine("You will retire in 5 years.");
             }
-            else                                     //if its not the given case above it will default to the one below
+
+            else
+
             {
                 Console.WriteLine("You will retire in 10 years.");
-                                //if even, this will appear
+
+            }
+
+            if (sibs == 0)
+            {
+                Console.WriteLine("You will have a vacation home in Greece.");
+            }
+
+            else if (sibs == 1)
+            {
+                Console.WriteLine("You will have a vacation home in China.");
+
+            }
+            else if (sibs == 2)
+
+            {
+                Console.WriteLine("You will have a vacation home in Florida.");
+            }
+
+            else if (sibs == 3)
+            {
+                Console.WriteLine("You will have a vacation home in Japan.");
+            }
+
+            else if (sibs >= 3)
+            {
+                Console.WriteLine("You will have a vacation home in Cleveland, Ohio.");
+
+            }
+
+
+            else if (sibs <= 0)
+            {
+                Console.WriteLine("You will have a vacation in Afghanistan, good luck!");
             }
 
             favColor = favColor.ToLower();
 
-            if (favColor == "red" || favColor == "orange" || favColor == "yellow" || favColor == "green" || favColor == "blue" || favColor == "indigo" || favColor == "violet" )
-                switch (favColor)
+            string favColoR = null;
+            if (favColoR == "red" || favColoR == "orange" || favColoR == "yellow" || favColoR == "blue" || favColoR == "indigo" || favColoR == "violet")
 
-            { case "red" :
-                Console.WriteLine("You will be driving a sports car soon!");
-                break;
+                switch (favColoR)
 
-            case "orange":
-                Console.WriteLine("You'll be travelling by skateboard!");
-                        break;
-            
-                case "yellow":
-                Console.WriteLine("You'll be getting around by bus!");
-                         break;
-
-                case "green":
-                Console.WriteLine("You'd better travel light...you'll be on foot!");
-                        break;
-            
-                case "indigo":
-                Console.WriteLine("You're travelling via rollerskates");
+                {
+                    case "red":
+                        Console.WriteLine("You're bussing to New York!");
                         break;
 
-                case "violet":
-                Console.WriteLine("You're get you're own private jet!");
+                    case "orange":
+                        Console.WriteLine("Do you enjoy trains? I hope so...you're going to California!");
                         break;
-                                    
-           }
 
-            int broSis = int.Parse(Console.ReadLine());
+                    case "yellow":
+                        Console.WriteLine("Hope you're not afraid of heights you're heading to Toronto by helicopter!");
+                        break;
 
-            if (broSis == 0)
+                    case "blue":
+                        Console.WriteLine("Get ready to scoot on a scoot through Sicily");
+                        break;
 
-            { Console.WriteLine("You'll travel to New Zealand"); }
+                    case "indigo":
+                        Console.WriteLine("Get ready to play the ukelele you're going to Hawai'i in a cruise ship");
+                        break;
 
-           else if  (broSis == +1)
+                    case "violet":
+                        Console.WriteLine("You're heading to Ibiza on a private jet");
+                        break;
 
-            { Console.WriteLine("You'll travel to France");
+                    default:
+                        Console.WriteLine("Be sure to travel light...you're on foot buddy!");
+                        break;
 
-            
-            }
-            if (broSis == 2)
-
-            {
-                Console.WriteLine("You'll travel to Jamaica");
-            }
-
-            if (broSis == +2)
-            {
-
-                Console.WriteLine("You'll travel to Cuba");
-
-            }
-            else if (broSis == +3) 
-            {
-                Console.WriteLine("You'll travel to the Andes");
-                  
-               
 
                 }
-                
-    
-                if (broSis >= 3) 
-                
 
-                { Console.WriteLine("You can travel anywhere South America!");
-                }
-
-            int month = int.Parse(Console.ReadLine());
-
-            if (month <= 4)
-
+            if (monthOfUser >= 1 || monthOfUser <= 4)
             {
-                Console.WriteLine("You have $15,000 in the bank");
+                Console.WriteLine("You will have $10,000 in the bank.");
 
             }
-            else
 
-             if (month <= 8)
-            {
-                Console.WriteLine("You have $5,000 in the bank");
-            }
-            else
-
-
-                if (month <= 12)
+            else if (monthOfUser >= 5 || monthOfUser <= 8)
 
             {
-                Console.WriteLine("You have $2 in the bank");
+                Console.WriteLine("You will have $3,000 in the bank.");
             }
+
+            else if (monthOfUser >= 9 || monthOfUser <= 12)
+
+            {
+                Console.WriteLine("You've got $5 left in your bank account..");
+            }
+
             else
 
             {
-                Console.WriteLine("You have $0 in the bank");
+                Console.WriteLine("You've got $1 left in your bank account.");
             }
 
-
-
-            //part 3
-            // The user’s fortune should be written as such: 
-            //[First Name]
-            //[Last Name]
-            //will retire in [# of Years] with [Amount of Money] in the bank, a vacation home in [Location] and a [Mode of Transportation].
-            //Program should be able to handle whether or not a user inputs capital or lowercase letters.
 
         }
     }
 
 }
-
-
