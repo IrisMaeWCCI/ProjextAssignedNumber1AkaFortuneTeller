@@ -1,0 +1,6 @@
+c:\users\wecancodeit\documents\visual studio 2015\Projects\Projext Assigned Number1\Projext Assigned Number1\bin\Debug\Projext Assigned Number1.exe.config
+c:\users\wecancodeit\documents\visual studio 2015\Projects\Projext Assigned Number1\Projext Assigned Number1\bin\Debug\Projext Assigned Number1.exe
+c:\users\wecancodeit\documents\visual studio 2015\Projects\Projext Assigned Number1\Projext Assigned Number1\bin\Debug\Projext Assigned Number1.pdb
+c:\users\wecancodeit\documents\visual studio 2015\Projects\Projext Assigned Number1\Projext Assigned Number1\obj\Debug\Projext Assigned Number1.exe
+c:\users\wecancodeit\documents\visual studio 2015\Projects\Projext Assigned Number1\Projext Assigned Number1\obj\Debug\Projext Assigned Number1.pdb
+c:\users\wecancodeit\documents\visual studio 2015\Projects\Projext Assigned Number1\Projext Assigned Number1\obj\Debug\Projext Assigned Number1.csprojResolveAssemblyReference.cache
